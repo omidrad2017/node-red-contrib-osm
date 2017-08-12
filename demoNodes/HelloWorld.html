@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ID Lon Lat Extractor from OSM',{
+        category: 'Demo',
+        color: '#ffaaaa',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "face.png",
+        label: function() {
+            return this.name||"ID Lon Lat Extractor from OSM";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ID Lon Lat Extractor from OSM">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+</script>
+ 
+<script type="text/x-red" data-help-name="ID Lon Lat Extractor from OSM">
+    <p>A node that extracts id, latitude and longitudes of a building footprint from OSM.<br/>
+    </p>
+</script>
